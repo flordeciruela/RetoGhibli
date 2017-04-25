@@ -59,9 +59,22 @@
       <img class="little-box" src="assets/img/luciernagas2.jpg" id="sm6">
       <video src="assets/img/luciernagas-trailer.mp4" class="little-box" id="vid6" controls=""></video>
     </li>
-
+    <section id="contenedorPuzzle">
+      <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+        <img id="pieza3" src="assets/img/3.jpg" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+        <img id="pieza2" src="assets/img/2.jpg" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+        <img id="pieza4" src="assets/img/4.jpg" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+        <img id="pieza1" src="assets/img/1.jpg" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+      </div>
+      <div id="puzzle">
+        <div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+        <div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+        <div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+        <div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+      </div>
+    </section>
   </ul>
 
-  <link rel="javascript" type="text/javascript" href="assets/js/main.js">
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
