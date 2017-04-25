@@ -1,3 +1,25 @@
+body{
+
+    font-family: 'Montserrat';
+    /*color: white;*/
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+     background: rgb(40,40,40);
+
+
+}
+#header-up{
+    background: #161515;
+
+}
+#header-down{
+    background: #2C33C8;
+}
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -5,6 +27,8 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 16px;
+    height: 5px;
 }
 .dropbtn:hover, .dropbtn:focus {
     background-color: #3e8e41;
@@ -20,8 +44,10 @@
 }
 
 .dropdown {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
+    background-color: #140C0C;
+    float: left;
 }
 .dropdown-content {
     display: none;
@@ -49,11 +75,16 @@
 	height: 55px;
 	background: #10CE41;
 	padding: 5px;
+    float: left;
 
 }
 #logo > img{
 	width: 100%;
 	height: 100%;
+
+}
+#buscador{
+    float: left;
 
 }
 nav{
@@ -62,4 +93,12 @@ nav{
 }
 li{
 	float: left;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(40,40,40);
 }
