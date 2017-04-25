@@ -1,5 +1,6 @@
 *{
-	
+	font-family: 'Montserrat';
+	/*font-family: 'Open Sans';*/
 }
 body{
 
@@ -11,13 +12,17 @@ background: #1983B4;
 
 }
 #container{
-	position: relative;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	top: 0;
 	
 }
 .imagenes{
 	position: relative;
-	height: 650px;
-	width: 1300px;
+	height: 100%;
+	width: 100%;
 	margin: 0 auto;
 }
 .imagenes img {
