@@ -13,10 +13,10 @@ body{
   margin-left: 539px;
   position: absolute;
   border-radius: 6px 0px 0px 6px;
-  background: -webkit-linear-gradient(left top, rgb(71, 114, 217), rgb(117, 109, 227));
-  background: -o-linear-gradient(bottom right, rgb(71, 114, 217), rgb(117, 109, 227));
-  background: -moz-linear-gradient(bottom right, rgb(71, 114, 217), rgb(117, 109, 227));
-  background: linear-gradient(to bottom right, rgb(71, 114, 217), rgb(117, 109, 227));
+  background: -webkit-linear-gradient(left top, rgb(71, 114, 217), rgb(232, 6, 220));
+  background: -o-linear-gradient(bottom right, rgb(71, 114, 217), rgb(232, 6, 220));
+  background: -moz-linear-gradient(bottom right, rgb(71, 114, 217), rgb(232, 6, 220));
+  background: linear-gradient(to bottom right, rgb(71, 114, 217), rgb(232, 6, 220));
 }
 
 .text{
@@ -79,6 +79,7 @@ img{
   cursor: pointer;
   transition: 0.3s;
 }
+
 
 .imagen:hover{
   opacity: 0.8;
@@ -155,4 +156,11 @@ img{
 
 #vid6{
   margin-top: 3040px;
+}
+
+#arrow{
+  margin-left: 600px;
+  margin-top: 3870px;
+  position: absolute;
+  z-index: +9;
 }
