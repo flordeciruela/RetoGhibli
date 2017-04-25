@@ -4,25 +4,48 @@
 	<meta charset="UTF-8">
 	<title>Proyecto Ghibli</title>
 	<!-- ESTILOS -->
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="assets/css/mainGhibli.css">
 	<!-- FUENTE -->
 
 	<!-- ICONOS -->
 </head>
 <body>
 	<header>
-		<div>Dropdown</div>
-		<div>LOGO
-			<img src="assets/img/logo.gif" alt="">
+		<div class="dropdown">
+			<button class="dropbtn" id="desplegar" onclick="myFunction()"> Dropdown</button>
+			<div id="myDropdown" class="dropdown-content">
+				<span>Síguenos</span>
+				<a class="social" href="#"><span>face</span></a>
+				<a class="social" href=""><span>tw</span></a>
+				<a class="social" href=""><span>inst</span></a>
+				<a class="social" href=""><span>g+</span></a>
+				<a class="social" href=""><span>yout</span></a>
 			</div>
+		</div> 
+		<div id="logo">
+			<img  src="assets/img/logo.gif" alt="">
+		</div>
+		<div id="menu">
+			<input type="text">
+			<span>lupa</span>
+		</div>
+		<div id="menu-rigth">Sign In</div>
+
 		<nav>
-			<ul>
-				<li>NOSOTROS</li>
-				<li>HISTORIA</li>
-				<li>PELICULA</li>
-				<li>CONTACTANOS</li>
-			</ul>
+			<a href="">
+				<span></span>
+				<div>NOSOTROS</div>
+			</a>
+			<a href="">
+				<span></span>
+				<div>NOSOTROS</div>
+			</a>
+			<div></div>
+			<div>HISTORIA</div>
+			<div>PELICULA</div>
+			<div>CONTACTANOS</div>
 		</nav>
+
 		<div>
 			<span class="icon">Buscar</span>
 		</div>
@@ -32,6 +55,24 @@
 		
 	</div>
 	<footer>
+		<div class="foot-left">
+			<span>Suscribete al Newsletter</span>
+			<div class="correo">
+				<input type="mail" >
+				<a href="#">Enviar</a>
+			</div>
+		</div>
+		<div class="foot-right">
+			<span>Síguenos</span>
+			<div class="redes">
+				<span>face</span>
+				<span>tw</span>
+				<span>inst</span>
+				<span>g+</span>
+				<span>yout</span>
+			</div>
+		</div>
+
 		
 	</footer>
 
