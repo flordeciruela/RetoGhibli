@@ -173,6 +173,29 @@ header{
     width: 
 }
 /*ABOUT*/
+.photo{
+    float: left;
+
+}
+.indicador{
+    width: 60px;
+    height: 60px;
+      border-radius: 50%;
+}
+.autor{
+    overflow: auto;
+}
+.descripcion{
+    margin-left: 70px;
+    font-size: 12px;
+    font-family: 'Raleway';
+    margin-top: 10px;  
+}
+.defini{
+    font-size: 10px;
+    color: #908F8F;
+}
+
 .title{
     font-size: 53px;
     margin-bottom: 5px;
@@ -191,6 +214,24 @@ h3{
     font-family: 'Lato';
 
 }
+.like{
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100px;
+    float: left;
+
+}
+.like > span{
+    font-size: 16px;
+    padding: 5px;
+    text-align: justify;
+    margin: 5px;
+}
+
+
 /*SELECIONAR*/
 #selecciona{
     background: #07B2BD;
@@ -207,11 +248,13 @@ h3{
     text-align: center;
 
 }
+/*FILM*/
 
 #peliculas{
     background: #1FC12A;
 }
 
+/*FORMULARIO*/
 #contacto{
     background: #FF7D13;
 
@@ -222,16 +265,17 @@ footer{
     background: rgb(40,40,40);
     color: white;
     padding: 8px;
-    position: fixed;
+  /*  position: fixed;
     bottom: 0;
-    width: 100%;
-    /*overflow: auto;*/
+    width: 100%;*/
+    overflow: auto;
+    
 }
 .footer{
     /*float: left;*/
     /*margin-left: 300px;*/
     font-size: 12px;
-
+    
 }
 .foot-left{
     float: left;
@@ -241,4 +285,9 @@ footer{
     float: right;
     margin-right: 200px;
     
+}
+
+/*ICONOS*/
+.icon{
+    font-size: 32px;
 }
