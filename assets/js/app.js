@@ -7,13 +7,34 @@ function menuDesplegable(menu){
 
 
 
-// FORMULARIO
+
+
+// FORMULARIO1  - SELECIONA O QUIZ
+
+// function choice(){
+    var edad = document.getElementById("edad").value,        
+        lugar = document.getElementById("lugar").value,
+        
+    
+
+    personaje.addEventListener('keyup',changeLetter);
+
+    function changeLetter(){  
+        personaje = document.getElementById("personaje");     
+        letter.value.toUpperCas();
+    }
+    changeLetter(personaje);
+    changeLetter(lugar);
+// }
+
+// FORMULARIO2
 
 var element = document.querySelector(".form-sub"); //trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
 element.addEventListener("submit", function (event) {
     "use strict";
     event.preventDefault();
     send();
+    choice();
 });
 
 function send() {

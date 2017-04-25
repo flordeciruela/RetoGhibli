@@ -60,7 +60,7 @@ header{
     transition: 0.4s;
 }
 .change .bar1{
-    transform: rotate(-45deg) translate(-9px, 3px) ;
+    transform: rotate(-45deg) translate(-8px, 3px) ;
 }
 
 .change .bar2 {
@@ -68,7 +68,7 @@ header{
 }
 
 .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -5px) ;
+    transform: rotate(45deg) translate(-8px, -3px) ;
 }
 
 .dropbtn {
