@@ -18,6 +18,9 @@ body{
     line-height: 1.71429;
     background-color: #fff;
 }
+a{
+    text-decoration: none;
+}
 
 header{
     position: fixed;
@@ -92,7 +95,8 @@ header{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
+    background-color: #E8E7E7;
+    opacity: 0.9;
     /*min-width: 100px;*/
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -101,7 +105,7 @@ header{
 }
 
 .dropdown-content a {
-    /*color: black;*/
+    color: #8D8181;
     padding: 12px;
     text-decoration: none;
     display: block;
@@ -111,6 +115,22 @@ header{
 
 .show {display:block;}
 
+.icon-twitter:hover{
+    color: #3BC3D7;
+}
+.icon-facebook:hover, .facebook-f:hover{
+    color: #220DBF;
+
+}
+.icon-linkedin:hover{
+    color: #2F67BA;
+}
+.icon-google-plus:hover{
+    color: #F62222;
+}
+.icon-play:hover{
+    color: #D70505;
+}
 /*LOGO*/
 
 #logo{
@@ -181,16 +201,17 @@ header{
 
 }
 .indicador{
-    width: 60px;
-    height: 60px;
-      border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 .autor{
     overflow: auto;
 }
 .descripcion{
     margin-left: 70px;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Raleway';
     margin-top: 10px;  
 }
@@ -218,13 +239,14 @@ h3{
 
 }
 .like{
-    border: 1px solid black;
+    border: 1px solid #fff;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
-    width: 100px;
+    width: 120px;
     float: left;
+    color: #fff;
 
 }
 .like > span{
@@ -232,6 +254,11 @@ h3{
     padding: 5px;
     text-align: justify;
     margin: 5px;
+}
+.cita{
+    font-size: 12px;
+    /*color: white;*/
+    text-align: center;
 }
 
 
@@ -248,10 +275,20 @@ h3{
 .formulario1{
     background: #F94595;
     width: 400px;
-    margin-top: 100px;
-    padding: 10px 50px;
+    margin: 5px 30px;
+    padding: 50px;
+    border-radius: 25px;
 
 }
+.quiz-title{
+    /*background: #93EC62;*/
+    font-size: 50px;
+    font-family: 'Montserrat';
+    color: #fff;
+    /*text-align: center;*/
+    margin:10px;
+}
+
 .choice{
     margin-left: 30px;
 }
@@ -279,30 +316,33 @@ button[type=submit]{
 
 #peliculas{
     background: #1FC12A;
+    position: relative;
+    /*overflow: visible;*/
 
 }
 
-
-
 .background2{
   width: 724px;
-  height: 7000px;
+  height: 4000px;
+  /*height: 7000px;*/
   background-color: #4772D9;
-  margin-left: 539px;
-  position: absolute;
+  margin-left: 400px;
+  /*position: relative;*/
   border-radius: 6px 0px 0px 6px;
   background: -webkit-linear-gradient(left top, rgb(71, 114, 217), rgb(232, 6, 220));
   background: -o-linear-gradient(bottom right, rgb(71, 114, 217), rgb(232, 6, 220));
   background: -moz-linear-gradient(bottom right, rgb(71, 114, 217), rgb(232, 6, 220));
   background: linear-gradient(to bottom right, rgb(71, 114, 217), rgb(232, 6, 220));
 }
-
+ul{
+    /*position: absolute;*/
+}
 .text{
   color: #FFFFFF;
   font-family: 'Montserrat';
   margin-left: 28px;
   margin-top: 15px;
-  font-size: 13px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -327,6 +367,7 @@ hr{
 li{
   list-style: none;
   position: absolute;
+  top: 0;
 }
 
 #first{
@@ -491,7 +532,7 @@ li{
     overflow: hidden;
 }
 
-#container{
+#container2{
   margin-left: 350px;
   margin-top: 3900px;
 
@@ -528,7 +569,7 @@ li{
     height: 98px;
 }
 
-#container{
+#container2{
   position: absolute;
   margin-left: 400px;
   margin-top: 4200px;
