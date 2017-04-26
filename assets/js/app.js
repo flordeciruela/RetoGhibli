@@ -49,7 +49,7 @@ function seleccion(){
             color.focus();
         }
 
-    form1.reset();
+    // form1.reset();
 
 }
    

@@ -164,7 +164,7 @@ header{
     display: inline-block;
     color: #9D9797;
 }
-.botones:hover{
+.botones:hover,.botones:focus{
     color: white;
     border: 1px dashed white;
 }
