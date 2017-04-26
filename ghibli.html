@@ -11,17 +11,11 @@
   	<!-- <link rel="stylesheet" href="assets/css/main.css"> -->
 	<!-- FUENTE -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 	<!-- ICONOS -->
 	<link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
   	<link rel="stylesheet" href="assets/fonts/style.css">
-</head>
-
-
-
-
-
-
 </head>
 <body>
 	<header>
@@ -91,7 +85,7 @@
 
 										
 					<div class="resena">
-						Alumnas de <strong>'Laboratoria'</strong>, futuras desarrolladoras 'Web Developer'.
+						Alumnas de <strong>'Laboratoria'</strong>, futuras 'Web Developers'.
 						Cada día mejor.
 					</div>
 					<div class="like">
@@ -122,12 +116,13 @@
 		
 		<section id="peliculas">
 
-		<div class="container sele">
+		<div class="container container2">
 			<div><a class="icon icon-arrow-up" href="#img1" id="arrow"></a></div>
 		  <div class="background2">
 		    <p class="text">PELÍCULAS</p>
 		  </div>
 		  <ul>
+		  	<div class="content-film">
 		    <li id="first">
 		       <a href="#img1" class="menu" >EL VIAJE DE CHIHIRO</a><hr>
 		        <div>
@@ -138,7 +133,7 @@
 		    </li>
 		    <li id="second">
 		       <a href="#img2" class="menu">MI VECINO TOTORO</a><hr>
-		         <div>
+		         <div class="totoro-position">
 		          <img src="assets/img/totoro.jpg" alt="totoro" class="imagen" id="img2">
 		          <img class="little-box" src="assets/img/totoro2.jpg" id="sm2">
 		          <video src="assets/img/totoro-trailer.mp4" class="little-box" id="vid2" controls=""></video>
@@ -167,15 +162,14 @@
 		      <video src="assets/img/marnie-trailer.mp4" class="little-box" id="vid5" controls=""></video>
 		    </li>
 		    <li id="sixth">
-		      <a href="#img6" class="menu">LA TUMBA DE LAS LUCIÉRNAGAS</a><hr>
+		      <a href="#img6" class="menu">LA TUMBA DE LAS LUCIÉRNAGAS</a><hr id="linea">
 		      <img src="assets/img/luciernagas.jpg" alt="luciernagas" class="imagen" id="img6">
 		      <img class="little-box" src="assets/img/luciernagas2.jpg" id="sm6">
 		      <video src="assets/img/luciernagas-trailer.mp4" class="little-box" id="vid6" controls=""></video>
-
-		    <section id="container2">
-			      <p id="instructions">Resuelve el rompecabezas</p>
-			     <section id="contenedorPuzzle">
-			      <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+		      <section id="container3">
+				      <p id="instructions">Resuelve el rompecabezas</p>
+				     <section id="contenedorPuzzle">
+				      <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
 			        <img id="pieza3" src="assets/img/3.jpg" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
 			        <img id="pieza2" src="assets/img/2.jpg" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
 			        <img id="pieza4" src="assets/img/4.jpg" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
@@ -191,6 +185,8 @@
 			    <p id="congrats"></p>
 			 </section>
 			 </ul>
+
+			 </div>
 		</div>
 			
 
@@ -251,10 +247,10 @@
 							<td><span id="err5"></span></td>
 						</tr>
 					</table>	
+					<br>
+					<br>
 					
-					<a href="#peliculas">
-						<button type="submit">Go!!</button>
-					</a>
+					<a href="#contacto">Ve tus resultados!!</a>
 					</form>
 					
 				</div>
@@ -286,8 +282,7 @@
                                 <textarea id="coment" class="help-textarea1" placeholder="Comentarios"></textarea>
                                 <span id="wrong2" class="message"></span>
                    	</div>                       
-                                <br>
-                                <button id="form-btn" type="submit">Enviar <span class="icon icon-leaf"></span> </button>
+                    <button id="form-btn" type="submit">Enviar <span class="icon icon-leaf"></span> </button>
                 </form>
 			</div>
 		</section>

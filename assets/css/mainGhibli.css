@@ -301,14 +301,32 @@ h3{
      border-radius: 20px;
     
 }
-button[type=submit]{
+
+.formulario1 a{
+    /*border: 1px dotted #FD204F;*/
+    border-radius: 10px;
+    background: #DC32F0;
+    margin-left: 80px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+.formulario1 a:hover{
+    background: #9B04B2;
+
+}
+
+    
+
+/*button[type=submit]{
     border: 1px dotted #FDE620;
     border-radius: 10px;
     background: #FDE620;
     margin-left: 120px;
     margin-top: 10px;
-    font-size: 30px;
-}
+    font-size: 10px;
+}*/
 
 
 
@@ -323,7 +341,7 @@ button[type=submit]{
 
 .background2{
   width: 724px;
-  height: 4000px;
+  height: 4310px;
   /*height: 7000px;*/
   background-color: #4772D9;
   margin-left: 400px;
@@ -337,6 +355,9 @@ button[type=submit]{
 ul{
     /*position: absolute;*/
 }
+/*.content-film{
+    background: #32E8F3;
+}*/
 .text{
   color: #FFFFFF;
   font-family: 'Montserrat';
@@ -363,11 +384,15 @@ hr{
   border: 0;
   border-top: 1px solid #aaaaaa;
 }
+#linea{
+    width: 130px;
+}
 
 li{
   list-style: none;
   position: absolute;
   top: 0;
+  left: 24px;
 }
 
 #first{
@@ -522,8 +547,8 @@ li{
 
 /*Contenedor del puzzle*/
 #contenedorPuzzle {
-    margin: 20px auto;
-    width: 450px;
+    margin: 0px auto;
+    width: 550px;
     background: rgba(20,20,20,0.8);
     box-shadow: 0px 0px 10px  2px #777;
     color: #ccc;
@@ -532,9 +557,9 @@ li{
     overflow: hidden;
 }
 
-#container2{
-  margin-left: 350px;
-  margin-top: 3900px;
+#container3{
+  margin-left: 400px;
+  margin-top: 3450px;
 
 }
 
@@ -576,10 +601,11 @@ li{
 }
 
 #congrats{
-  font-family: "Montserrat";
+  font-family: "Raleway";
   font-size: 20px;
   margin-left: 80px;
   margin-top: 30px;
+  color: #fff;
 }
 
 #instructions{
@@ -605,6 +631,7 @@ li{
     background-attachment: fixed;
     margin: auto;
     width: 1200px;*/
+    color: #fff;
 }
 
 form{
@@ -616,6 +643,14 @@ form{
     margin-top: 5px;
     border-radius: 9px;
 }
+
+input:focus{
+    border-color: #47B525;
+    box-shadow: 0 0 20px #088111;
+}
+
+
+
 .help-input,textarea{
     width: 80%;
     margin-bottom: 20px;
@@ -658,14 +693,17 @@ textarea{
   top: 10px;
 }
 #form-btn{
-    background-color: #BE1729;
+    border-radius: 10px;
+    background: #DC32F0;
+    margin-left: 80px;
     color:#FFF;
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 15px;
 }
 
 #form-btn:hover{
     cursor: pointer;
+    background: #9B04B2;
 }
 .icon-leaf{
    margin-right: 23px;
