@@ -29,9 +29,10 @@ var err0=document.getElementById("err0"),
     err3=document.getElementById("err3");
 
 
-    personaje.addEventListener('keyup',function(){             
+    personaje.addEventListener('keyup',convertir);
+    function convertir(){             
         personaje.value = personaje.value.toUpperCase();
-    });
+    }
     lugar.addEventListener('keyup',function(){             
         lugar.value = lugar.value.toUpperCase();
     });
