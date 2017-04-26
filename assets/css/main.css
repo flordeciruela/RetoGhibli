@@ -8,7 +8,7 @@ body{
 
 .background2{
   width: 724px;
-  height: 3940px;
+  height: 5000px;
   background-color: #4772D9;
   margin-left: 539px;
   position: absolute;
@@ -65,10 +65,6 @@ li{
   margin-top: 480px;
 }
 
-img{
-  border-radius: 6px 6px 6px 6px;
-  position: absolute;
-}
 
 .imagen{
   margin-top: -100px;
@@ -94,16 +90,30 @@ img{
   z-index: +9;
 }
 
+#img1{
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
+}
+
+#sm1{
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
+}
+
 #vid1{
   margin-top: 40px;
 }
 
 #img2{
   margin-top: 500px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #sm2{
   margin-top: 500px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #vid2{
@@ -112,10 +122,14 @@ img{
 
 #img3{
   margin-top: 1100px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #sm3{
   margin-top: 1100px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #vid3{
@@ -124,10 +138,14 @@ img{
 
 #img4{
   margin-top: 1700px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #sm4{
   margin-top: 1700px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #vid4{
@@ -136,10 +154,14 @@ img{
 
 #img5{
   margin-top: 2300px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #sm5{
   margin-top: 2300px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #vid5{
@@ -148,10 +170,14 @@ img{
 
 #img6{
   margin-top: 2900px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #sm6{
   margin-top: 2900px;
+  border-radius: 6px 6px 6px 6px;
+  position: absolute;
 }
 
 #vid6{
@@ -213,4 +239,27 @@ section{
 	padding: 1px;
 	width: 98px;
 	height: 98px;
+}
+
+#container{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 4200px;
+}
+
+#congrats{
+  font-family: "Montserrat";
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 30px;
+
+}
+
+#instructions{
+  font-family: "Montserrat";
+  font-size: 20px;
+  margin-left: 101px;
+  margin-top: 30px;
+
+
 }

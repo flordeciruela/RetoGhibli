@@ -19,7 +19,7 @@
        <a href="#img1" class="menu" >EL VIAJE DE CHIHIRO</a>
         <div>
           <img src="assets/img/chihiro.jpg" alt="chihiro" class="imagen" id="img1">
-          <img class="little-box" src="assets/img/chihiro2.jpg">
+          <img class="little-box" src="assets/img/chihiro2.jpg" id="sm1">
           <video src="assets/img/chihiro-trailer.mp4" class="little-box" id="vid1" controls=""></video>
         </div>
     </li>
@@ -59,7 +59,9 @@
       <img class="little-box" src="assets/img/luciernagas2.jpg" id="sm6">
       <video src="assets/img/luciernagas-trailer.mp4" class="little-box" id="vid6" controls=""></video>
     </li>
-    <section id="contenedorPuzzle">
+    <section id="container">
+      <p id="instructions">Resuelve el rompecabezas</p>
+     <section id="contenedorPuzzle">
       <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
         <img id="pieza3" src="assets/img/3.jpg" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
         <img id="pieza2" src="assets/img/2.jpg" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
@@ -73,6 +75,8 @@
         <div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
       </div>
     </section>
+    <p id="congrats"></p>
+   </section>
   </ul>
 
   <script src="assets/js/main.js"></script>

@@ -49,7 +49,7 @@ function comprobarPuzzle(){
 		(document.getElementById('pieza3').parentNode.id=='tres') &&
 		(document.getElementById('pieza4').parentNode.id=='cuatro'))
 	{
-		alert('Felicidades, has hecho el puzzle.');
+		document.getElementById("congrats").innerHTML="Felicidades, has hecho el puzzle.";
 	}
 }
 
