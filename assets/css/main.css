@@ -1,5 +1,6 @@
 *{
-	
+	font-family: 'Montserrat';
+	/*font-family: 'Open Sans';*/
 }
 body{
 
@@ -20,6 +21,7 @@ background: #1983B4;
 }
 /*.imagenes{
 	position: relative;
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 }*/
