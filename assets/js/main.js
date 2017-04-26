@@ -65,5 +65,4 @@ function comprobarnavegador() {
 	}
 
 }
-
 //https://codepen.io/unakame/pen/BRQPyd
