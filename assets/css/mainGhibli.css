@@ -261,6 +261,11 @@ h3{
     text-align: center;
 }
 
+.miyazaki{
+    margin: 0 auto;
+    background: white;
+
+}
 
 /*SELECIONAR*/
 #selecciona{
@@ -614,8 +619,6 @@ li{
   margin-left: 101px;
   margin-top: 30px;
 }
-
-
 
 /*FORMULARIO*/
 #contacto{

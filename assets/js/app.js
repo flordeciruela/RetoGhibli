@@ -8,7 +8,7 @@ var menu = document.getElementById(menu);
 
 function continuar(){
 
-    // FORMULARIO1  - SELECIONA O QUIZ
+ // FORMULARIO1  - SELECIONA O QUIZ
 
 var form1 = document.querySelector(".form-up"); //trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
 form1.addEventListener("submit", function (event) {
