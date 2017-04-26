@@ -147,12 +147,15 @@ p {
   font-size: 16px;
 }
 .fs1 {
+<<<<<<< HEAD
   font-size: 28px;
 }
 .fs2 {
   font-size: 32px;
 }
 .fs3 {
+=======
+>>>>>>> 7bcaf1389f0920d1c6cd285c5654d69576ce85da
   font-size: 32px;
 }
 

@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Proyecto Ghibli</title>
 	<!-- ESTILOS -->
 	<link rel="stylesheet" type="text/css
 	" href="assets/css/mainGhibli.css">
+  	<!-- <link rel="stylesheet" href="assets/css/main.css"> -->
 	<!-- FUENTE -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
 	<!-- ICONOS -->
 	<link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
+  	<link rel="stylesheet" href="assets/fonts/style.css">
+</head>
+
+
+
+
+
 
 </head>
 <body>
@@ -169,9 +179,87 @@
 				</div>
 			</div>
 		</section>
+
+
+
 		<section id="peliculas">
-		<div class="container">dgfhgj</div>
-		</section>
+
+		<div class="container">
+			<div><a class="icon-arrow-up" href="#img1" id="arrow"></a></div>
+		  <div class="background2">
+		    <p class="text">PELÍCULAS</p>
+		  </div>
+		  <ul>
+		    <li id="first">
+		       <a href="#img1" class="menu" >EL VIAJE DE CHIHIRO</a><hr>
+		        <div>
+		          <img src="assets/img/chihiro.jpg" alt="chihiro" class="imagen" id="img1">
+		          <img class="little-box" src="assets/img/chihiro2.jpg" id="sm1">
+		          <video src="assets/img/chihiro-trailer.mp4" class="little-box" id="vid1" controls=""></video>
+		        </div>
+		    </li>
+		    <li id="second">
+		       <a href="#img2" class="menu">MI VECINO TOTORO</a><hr>
+		         <div>
+		          <img src="assets/img/totoro.jpg" alt="totoro" class="imagen" id="img2">
+		          <img class="little-box" src="assets/img/totoro2.jpg" id="sm2">
+		          <video src="assets/img/totoro-trailer.mp4" class="little-box" id="vid2" controls=""></video>
+		         </div>
+		    </li>
+		    <li id="third">
+		      <a href="#img3" class="menu">LA PRINCESA MONONOKE</a><hr>
+		      <div>
+		         <img src="assets/img/mononoke.jpg" alt="mononoke" class="imagen" id="img3">
+		         <img class="little-box" src="assets/img/mononoke2.jpg" id="sm3">
+		         <video src="assets/img/mononoke-trailer.mp4" class="little-box" id="vid3" controls=""></video>
+		      </div>
+		    </li>
+		    <li id="fourth">
+		      <a href="#img4" class="menu">EL CASTILLO AMBULANTE</a><hr>
+		      <div>
+		        <img src="assets/img/castillo.jpg" alt="castillo" class="imagen" id="img4">
+		        <img class="little-box" src="assets/img/castillo2.jpg" id="sm4">
+		        <video src="assets/img/castillo-trailer.mp4" class="little-box" id="vid4" controls=""></video>
+		      </div>
+		    </li>
+		    <li id="fifth">
+		      <a href="#img5" class="menu">EL RECUERDO DE MARNIE</a><hr>
+		      <img src="assets/img/marnie.jpg" alt="marnie" class="imagen" id="img5">
+		      <img class="little-box" src="assets/img/marnie2.jpg" id="sm5">
+		      <video src="assets/img/marnie-trailer.mp4" class="little-box" id="vid5" controls=""></video>
+		    </li>
+		    <li id="sixth">
+		      <a href="#img6" class="menu">LA TUMBA DE LAS LUCIÉRNAGAS</a><hr>
+		      <img src="assets/img/luciernagas.jpg" alt="luciernagas" class="imagen" id="img6">
+		      <img class="little-box" src="assets/img/luciernagas2.jpg" id="sm6">
+		      <video src="assets/img/luciernagas-trailer.mp4" class="little-box" id="vid6" controls=""></video>
+
+		    <section id="container2">
+			      <p id="instructions">Resuelve el rompecabezas</p>
+			     <section id="contenedorPuzzle">
+			      <div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+			        <img id="pieza3" src="assets/img/3.jpg" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			        <img id="pieza2" src="assets/img/2.jpg" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			        <img id="pieza4" src="assets/img/4.jpg" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			        <img id="pieza1" src="assets/img/1.jpg" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			      </div>
+			      <div id="puzzle">
+			        <div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			        <div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			        <div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			        <div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			      </div>
+			    </section>
+			    <p id="congrats"></p>
+			 </section>
+			 </ul>
+		</div>
+			
+
+  		</section>
+
+
+
 		<section id="contacto">
 			<div class="container">
 				
@@ -223,6 +311,7 @@
 	</footer>
 
 	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script src="assets/js/main.js"></script>
 	
 </body>
 </html>
