@@ -1,71 +1,116 @@
+window.addEventListener('load',continuar);
 var menu = document.getElementById(menu);
-function menuDesplegable(menu){
-	menu.classList.toggle("change");
-	document.getElementById("myDropdown").classList.toggle("show");	
-}
-
-
-
-
-
-
-// FORMULARIO1  - SELECIONA O QUIZ
-
-// function choice(){
-    var edad = document.getElementById("edad").value,        
-        lugar = document.getElementById("lugar").value,
-        
     
-
-    personaje.addEventListener('keyup',changeLetter);
-
-    function changeLetter(){  
-        personaje = document.getElementById("personaje");     
-        letter.value.toUpperCas();
+    function menuDesplegable(menu){
+        menu.classList.toggle("change");
+        document.getElementById("myDropdown").classList.toggle("show"); 
     }
-    changeLetter(personaje);
-    changeLetter(lugar);
-// }
+
+function continuar(){
+
+    // FORMULARIO1  - SELECIONA O QUIZ
+
+var form1 = document.querySelector(".form-up"); //trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
+form1.addEventListener("submit", function (event) {
+    "use strict";
+    event.preventDefault();
+    seleccion();
+
+});
+
+var edad = document.getElementById("edad"),  
+    color = document.getElementById("color"),     
+    musica = document.getElementById("musica"),
+    lugar = document.getElementById("lugar"),
+    personaje = document.getElementById("personaje");
+var err0=document.getElementById("err0"),
+    err1=document.getElementById("err1"),
+    err2=document.getElementById("err2"),
+    err3=document.getElementById("err3");
+
+
+    personaje.addEventListener('keyup',function(){             
+        personaje.value = personaje.value.toUpperCase();
+    });
+    lugar.addEventListener('keyup',function(){             
+        lugar.value = lugar.value.toUpperCase();
+    });
+
+function seleccion(){
+    if(edad.value = null){
+        err0.style.display ="block";
+        err0.innerHTML="Complete";
+        edad.focus();
+        return false;
+
+    }
+    else{
+            err0.style.display = "none";
+            color.focus();
+        }
+
+    form1.reset();
+
+}
+   
 
 // FORMULARIO2
 
-var element = document.querySelector(".form-sub"); //trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
+var element = document.querySelector(".form-signup"); //trae el primer elemento de la "clase"; tbm se pudo haber usado: document.getElementsByClassName("form-sub")[0];
 element.addEventListener("submit", function (event) {
     "use strict";
     event.preventDefault();
-    send();
-    choice();
+    validateForm();
+
 });
 
-function send() {
-    "use strict";
-    var name = document.getElementById("name").value,
-        email = document.getElementById("email").value,
-        phone = document.getElementById("phone").value,
-        alert0 = document.getElementById("err00"),
-        alert1 = document.getElementById("err01"),
-        alert2 = document.getElementById("err02");
-
-    if (name === null || name.length === 0 || /[0-9]+/.test(name) || /[^A-ZÁÉÍÓÚ a-zñáéíóú]+/.test(name)) {
-        alert0.innerHTML = "Fill out the field correctly, use only letters.";
-        document.getElementById("name").focus();
+function validateForm(){
+    var name = document.getElementById("name"),
+        email = document.getElementById("email"),
+        coment = document.getElementById("coment"),
+        enviar= document.getElementById("form-btn");
+    var span0 = document.getElementById("wrong0"),
+        span1 = document.getElementById("wrong1"),
+        span2 = document.getElementById("wrong2");
+        
+    if(name.value == ""){
+        span0.style.display = "block";
+        span0.innerHTML = " Debe ingresar su nombre";
+        name.focus();
         return false;
-    } else if (/^([A-ZÁÉÍÓÚ a-zñáéíóú\s\D]*)/.test(name)) {
-        alert0.innerHTML = "";
     }
-    if (email.length === 0 || /[\w]+@{1}[\w\-]+\.[a-z]{2,3}/.test(email) === false) {
-        alert1.innerHTML = "Please use a valid format: (example@hosting.domain)";
-        document.getElementById("email").focus();
+    else if(/([A-ZÑÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+/.test(name.value) == false){
+        span0.style.display = "block";
+        span0.innerHTML = " Primera letra en mayúscula";
+        name.focus();
         return false;
-    } else {
-        alert1.innerHTML = "";
     }
-    if (/[0-9]+/.test(phone) === false) {
-        alert2.innerHTML = "Fill out the field just with numbers";
-        document.getElementById("phone").focus();        
+        else{
+            span0.style.display = "none";
+            email.focus();
+        }
+    if(/[\w]+@{1}[\w\-]+\.[a-z]{2,3}/.test(email.value)==false){
+        span1.style.display = "block";
+        span1.innerHTML = "Verifique su e-mail";
+        email.focus();
         return false;
-    } else {
-        alert2.innerHTML = "";
+    }
+        else{
+            span1.style.display = "none";
+            coment.focus();
+        }
+    
+    if(coment.value == ""){
+        span2.style.display = "block";
+        span2.innerHTML = "Dejenos un comentario";
+        coment.focus();
+        return false;
+    }
+    else{
+        span2.style.display = "none";
+        span2.innerHTML = "";
+        enviar.focus();
     }
     element.reset();
+}
 }

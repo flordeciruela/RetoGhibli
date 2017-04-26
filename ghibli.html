@@ -26,7 +26,6 @@
 					</div>
 				</div>
 				<div id="myDropdown" class="dropdown-content">
-					<span>Síguenos</span>
 					<a class="social" href="#"><span class="icon icon-facebook facebook-f"></span></a>
 					<a class="social" href=""><span class="icon icon-twitter"></span></a>
 					<a class="social" href=""><span class="icon icon-linkedin"></span></a>
@@ -35,7 +34,7 @@
 				</div>
 			</div> 
 			<div id="logo">
-				<img  src="assets/img/logo.gif" alt="">
+				<img  src="assets/img/logo.jpg" alt="">
 			</div>
 			<div id="buscador">
 			<input type="text" placeholder="Ingresa tu busqueda...">
@@ -44,6 +43,7 @@
 			<div id="menu-rigth">Sign In</div>
 		</div>		
 		<div id="header-down">
+			
 			<div id="caja1" class="box botones">
 			<span class="icon icon-search2"></span>
 			<div >Buscar</div>
@@ -56,11 +56,11 @@
 				<span class="icon icon-point-down"></span>
 				<div>SELECCIONA</div>
 			</a>
-			<a class="box botones" href="">
+			<a class="box botones" href="#peliculas">
 				<span class="icon icon-film"></span>
 				<div>PELICULAS</div>
 			</a>
-			<a class="box botones" href="">
+			<a class="box botones" href="#contacto">
 				<span class="icon icon-comments"></span>
 				<div>CONTACTO</div>
 			</a>
@@ -75,9 +75,9 @@
 				</div>
 				
 				<div class="descripcion">
-					<span><strong>Rocio Emma Tapia Alva</strong></span>
+					<span><strong>Emma Tapia Alva</strong></span>
 					<br>
-					<span><strong>Dana</strong></span>
+					<span><strong>Dana Franco</strong></span>
 
 										
 					<div class="resena">
@@ -111,39 +111,60 @@
 				<div class="kaonashi" >
 					<img src="assets/img/kaonashi.jpg" alt="mascota">
 				</div>
-				<div class="kaonashi formulario1">
-					<span>Adapta el film a tu necesidad</span>
-					<br><br>
-					<span>Sobre ti</span>
-					<label for="">Edad</label>
-					<br><br>
-					<input id="edad" type="text"  >
-					<br><br>
-					<label for="">Color favorito</label>
+				<div class="kaonashi formulario1 " >
+					<form class="form-up" action="" novalidate="">
+					<span class="choice" >Adapta el film a tu necesidad</span>
 					<br>
-					<input id="color" type="text">
-					<br><br>
-					<label for="">Heroes o Heroinas</label>
-					<input id="heroes" type="">
-					<br>	<br>
-					<span>Sobre la película</span>
-					<label for="">Personaje principal</label>
-					<input id="personaje" type="text">
+					<span class="you">Sobre ti</span>
 					<br>
-					<label for="">Lugar de los hechos</label>
-					<input id="lugar" type="text">
+					<table>
+					<tr>
+						<td><label for="">Edad</label></td>
+						<td><input class="form1" id="edad" type="number" required=""></td>
+						<td><span id="err0"></span></td>
+					</tr>
+					<tr>
+						<td><label for="">Color favorito</label></td>
+						<td><input class="form1" id="color" type="text" required=""></td>
+						<td><span id="err1"></span></td>
+					</tr>
+					<tr>
+						<td><label for="">Género musical</label></td>
+						<td><input class="form1" id="musica" required="" type=""></td>
+						<td><span id="err2"></span></td>
+					</tr>
+					</table>
 					<br>
-					<label for="">Tema resaltante</label>
-					<select name="" id="gustos">
-						<option value="">Naturaleza</option>
-						<option value="">Aventuras</option>
-						<option value="">Amistad</option>
-						<option value="">Fantasía</option>
-						<option value="">Viajes-castillo</option>
-					</select>
-					<a href="">
+					<span class="you">Sobre la película</span>
+					<table>
+						<tr>
+							<td><label for="">Personaje principal</label></td>
+							<td><input class="form1" id="personaje" type="text"></td>
+							<td><span id="err3"></span></td>
+						</tr>
+						<tr>
+							<td><label for="">Lugar de los hechos</label></td>
+							<td><input class="form1" id="lugar" type="text"></td>
+							<td><span id="err4"></span></td>
+						</tr>
+						<tr>
+							<td><label for="">Tema resaltante</label></td>
+							<td><select class="form1" name="" id="tema">
+								<option value="" hidden="">Selecciona</option>
+								<option value="">Naturaleza</option>
+								<option value="">Aventuras</option>
+								<option value="">Amistad</option>
+								<option value="">Fantasía</option>
+								<option value="">Viajes-castillo</option>
+							</select></td>
+							<td><span id="err5"></span></td>
+						</tr>
+					</table>	
+					
+					<a href="#peliculas">
 						<button type="submit">Go!!</button>
 					</a>
+					</form>
 					
 				</div>
 			</div>
@@ -152,26 +173,31 @@
 		<div class="container">dgfhgj</div>
 		</section>
 		<section id="contacto">
-			<div class="container">FORMULARIO
-				<form class="form-sub">
-                                <label for="name" class="help-form">Name <span class="req">*</span><span id="err00"></span></label>
-                                <br>
-                                <input id="name" class="help-input" name="name" placeholder="Name" type="text" >
-                                <br>
-                                <label for="email" class="help-form">Email <span class="req">*</span><span id="err01"></span></label>
-                                <br>
+			<div class="container">
+				
+				<form class="form-signup" novalidate>
+				<h2>CONTÁCTANOS</h2>
+				<h4>Estamos <span class="icon icon-heart-o"></span> de ayudarte!</h4>
+				<h5>Nos gusta crear cosas con diversión y una mente abierta</h5>
+				<h5>Siéntete libre de decir 'Hola!'</h5>
+					<div class="input-box">
+						<label for="name" class="help-form"><span class="req"></span><span id="err00"></span></label>
+                                <input id="name" class="help-input" name="name" placeholder="Tu nombre" type="text" >
+                                <span id="wrong0" class="message"></span>						
+					</div>
+					<div class="input-box">
+						<label for="email" class="help-form"><span class="req"></span><span id="err01"></span></label>                            
                                 <input id="email"  class="help-input" name="email" type="email" placeholder="Email">
+                                <span id="wrong1" class="message"></span>						
+					</div>
+					<div class="input-box">
+						<label id="message" class="help-form"></label>                                
+                                <textarea id="coment" class="help-textarea1" placeholder="Comentarios"></textarea>
+                                <span id="wrong2" class="message"></span>
+                   	</div>                       
                                 <br>
-                                <label id="where" class="help-form">Where did you hear about us?</label>
-                                <br>
-                                <textarea class="help-textarea1"></textarea>
-                                <br>
-                                <label class="help-form">Anything else?</label>
-                                <br>
-                                <textarea class="help-textarea2"></textarea>
-                                <p class="req-fields"><span class="req">* </span>Required fields</p>
-                                <button id="form-btn" type="submit">Send us a message</button>
-                            </form>
+                                <button id="form-btn" type="submit">Enviar <span class="icon icon-leaf"></span> </button>
+                </form>
 			</div>
 		</section>
 		
