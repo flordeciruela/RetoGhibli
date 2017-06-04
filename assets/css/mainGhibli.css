@@ -24,7 +24,7 @@ a{
 }
 
 header{
-    position: fixed;
+
     top: 0;
     width: 100%;
     background: rgb(40,40,40);
@@ -139,7 +139,7 @@ header{
     height: 12%;
     padding: 5px;
     display: inline-block;
-    position: fixed;
+  /*  position: fixed; por qe el logo estaba fixed? :c */
     top: 45px;
     left: 160px;
 }
@@ -177,7 +177,7 @@ header{
     /*background: #8F04DF;*/
     float: left;
     padding: 15px 35px;
-    margin-top: 70px;
+    /*margin-top: 70px; mucho top*/
     text-decoration:none;
 }
 .botones{
@@ -192,7 +192,7 @@ header{
 /*CONTENIDO*/
 #about{
     background: #AE3131;
-    margin-top: 135px;
+    /*margin-top: 135px; al quitarle el margin, fue innecesario*/
     padding: 50px;
     width: 100%;
 }
@@ -209,6 +209,10 @@ header{
 }
 .autor{
     overflow: auto;
+}
+
+#labo{
+  text-decoration: none;
 }
 .descripcion{
     margin-left: 70px;
@@ -633,7 +637,7 @@ li{
 }
 
 form{
-    width: 650px;
+    /*width: 650px; era lo qe daba margin de más a toda la web*/
     margin: auto;
     background-color: rgba(0,0,0,0.4);
     padding: 10px;
