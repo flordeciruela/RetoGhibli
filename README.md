@@ -24,7 +24,7 @@ HERRAMIENTA
             Se desarrollaron 2 archivos HTML para una mejor experiencia visual, donde el primero muestra la presentación del servicio.
             El segundo documento HTML presenta la parte netamente interactiva con el usuario.
             
-            Se hizó uso de iconos de la Icomoon.io y fuentes de GoogleFonts, las cuales fueron: 'Montserrat', 'Open Sans' y 'Raleway'.
+            Se hizo uso de iconos de la Icomoon.io y fuentes de GoogleFonts, las cuales fueron: 'Montserrat', 'Open Sans' y 'Raleway'.
             
             Los estilos se repartieron en dos documentos .CSS y la funcionalidad de eventos en dos documentos .JS
             
