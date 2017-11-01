@@ -1,9 +1,8 @@
 window.addEventListener('load',continuar);
-var menu = document.getElementById(menu);
-    
-    function menuDesplegable(menu){
-        menu.classList.toggle("change");
-        document.getElementById("myDropdown").classList.toggle("show"); 
+
+    function menuDesplegable(){
+        document.getElementById("desplegar").classList.toggle("change");
+        document.getElementById("myDropdown").classList.toggle("show");
     }
 
 function continuar(){
@@ -18,8 +17,8 @@ form1.addEventListener("submit", function (event) {
 
 });
 
-var edad = document.getElementById("edad"),  
-    color = document.getElementById("color"),     
+var edad = document.getElementById("edad"),
+    color = document.getElementById("color"),
     musica = document.getElementById("musica"),
     lugar = document.getElementById("lugar"),
     personaje = document.getElementById("personaje");
@@ -30,10 +29,10 @@ var err0=document.getElementById("err0"),
 
 
     personaje.addEventListener('keyup',convertir);
-    function convertir(){             
+    function convertir(){
         personaje.value = personaje.value.toUpperCase();
     }
-    lugar.addEventListener('keyup',function(){             
+    lugar.addEventListener('keyup',function(){
         lugar.value = lugar.value.toUpperCase();
     });
 
@@ -53,7 +52,7 @@ function seleccion(){
     // form1.reset();
 
 }
-   
+
 
 // FORMULARIO2
 
@@ -73,7 +72,7 @@ function validateForm(){
     var span0 = document.getElementById("wrong0"),
         span1 = document.getElementById("wrong1"),
         span2 = document.getElementById("wrong2");
-        
+
     if(name.value == ""){
         span0.style.display = "block";
         span0.innerHTML = " Debe ingresar su nombre";
@@ -100,7 +99,7 @@ function validateForm(){
             span1.style.display = "none";
             coment.focus();
         }
-    
+
     if(coment.value == ""){
         span2.style.display = "block";
         span2.innerHTML = "Dejenos un comentario";

@@ -6,8 +6,7 @@
   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Proyecto Ghibli</title>
 	<!-- ESTILOS -->
-	<link rel="stylesheet" type="text/css
-	" href="assets/css/mainGhibli.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/mainGhibli.css">
   	<!-- <link rel="stylesheet" href="assets/css/main.css"> -->
 	<!-- FUENTE -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
@@ -19,11 +18,11 @@
 </head>
 <body>
 	<header>
-		<div class="menuInicial container">
+		<div class="menuInicial">
 		<div id="header-up">
 			<div class="dropdown">
 				<div class="dropbtn" id="desplegar" onclick="menuDesplegable()">
-					<div id="menu" class="menu0" onclick="menuDesplegable(this)">
+					<div id="menu" class="menu">
 						<div class="bar1"></div>
 						<div class="bar2"></div>
 						<div class="bar3"></div>
@@ -36,23 +35,25 @@
 					<a class="social" href=""><span class="icon icon-google-plus"></span></a>
 					<a class="social" href=""><span class="icon icon-play"></span></a>
 				</div>
-			</div> 
+			</div>
 			<div id="logo">
-				<img  src="assets/img/logo.jpg" alt="">
+				<img src="assets/img/logo.jpg" alt="Logo">
 			</div>
-			<div id="buscador">
-			<input type="text" placeholder="Ingresa tu busqueda...">
-			<span class="icon icon-search2"></span>
+			<div id="menu-rigth">
+				<div id="buscador">
+					<input type="text" placeholder="Ingresa tu busqueda...">
+					<span class="icon icon-search2"></span>
+				</div>
+				<a href="index.html" style="color:#fff;">Nos vemos</a>
 			</div>
-			<div id="menu-rigth"><a href="index.html" style="color:#fff;">Nos vemos</a></div>
-		</div>		
+		</div>
 		<div id="header-down">
-			
+
 			<div id="caja1" class="box botones">
-			<span class="icon icon-search2"></span>
-			<div >Buscar</div>
+				<span class="icon icon-search2"></span>
+				<div >Buscar</div>
 			</div>
-			<a  class="box botones"  href="#about">
+			<a  class="box botones" href="#about">
 				<span class="icon icon-accessibility"></span>
 				<div>NOSOTROS</div>
 			</a>
@@ -69,27 +70,27 @@
 				<div>CONTACTO</div>
 			</a>
 		</div>
-		</div>				
-	</header>	
+		</div>
+	</header>
 		<section id="about">
 			<div class="container">
 				<div class="autor">
 				<div class="photo">
 					<img src="assets/img/totorito.jpg" alt="Totoro" class="autores indicador" >
 				</div>
-				
+
 				<div class="descripcion">
 					<span class="resena"><strong>Emma Tapia Alva</strong></span>
 					<br>
 					<span class="resena"><strong>Dana Franco</strong></span>
 
-										
+
 					<div class="resena">
 						Alumnas de <strong>'Laboratoria'</strong>, futuras 'Web Developers'.
 						Cada día mejor.
 					</div>
 					<div class="like">
-					<span class="icon icon-heart"> 
+					<span class="icon icon-heart">
 					<span class="cita">Vistos 23</span> </span>
 					</div>
 					<div class="like">
@@ -112,7 +113,7 @@
 					</p>
 					<div class="miyazaki">
 						<video src="assets/img/miyazaki-trailer.mp4" width="300px" controls="">
-							
+
 
 
 
@@ -122,10 +123,10 @@
 
 						</video>
 					</div>
-				</article>	
+				</article>
 			</div>
 		</section>
-		
+
 		<section id="peliculas">
 
 		<div class="container container2">
@@ -200,7 +201,7 @@
 
 			 </div>
 		</div>
-			
+
 
   		</section>
 
@@ -258,13 +259,13 @@
 							</select></td>
 							<td><span id="err5"></span></td>
 						</tr>
-					</table>	
+					</table>
 					<br>
 					<br>
-					
+
 					<a href="#contacto">Ve tus resultados!!</a>
 					</form>
-					
+
 				</div>
 			</div>
 		</section>
@@ -273,7 +274,7 @@
 
 		<section id="contacto">
 			<div class="container">
-				
+
 				<form class="form-signup" novalidate>
 				<h2>CONTÁCTANOS</h2>
 				<h4>Estamos <span class="icon icon-heart-o"></span> de ayudarte!</h4>
@@ -282,23 +283,23 @@
 					<div class="input-box">
 						<label for="name" class="help-form"><span class="req"></span><span id="err00"></span></label>
                                 <input id="name" class="help-input" name="name" placeholder="Tu nombre" type="text" >
-                                <span id="wrong0" class="message"></span>						
+                                <span id="wrong0" class="message"></span>
 					</div>
 					<div class="input-box">
-						<label for="email" class="help-form"><span class="req"></span><span id="err01"></span></label>                            
+						<label for="email" class="help-form"><span class="req"></span><span id="err01"></span></label>
                                 <input id="email"  class="help-input" name="email" type="email" placeholder="Email">
-                                <span id="wrong1" class="message"></span>						
+                                <span id="wrong1" class="message"></span>
 					</div>
 					<div class="input-box">
-						<label id="message" class="help-form"></label>                                
+						<label id="message" class="help-form"></label>
                                 <textarea id="coment" class="help-textarea1" placeholder="Comentarios"></textarea>
                                 <span id="wrong2" class="message"></span>
-                   	</div>                       
+                   	</div>
                     <button id="form-btn" type="submit">Enviar <span class="icon icon-leaf"></span> </button>
                 </form>
 			</div>
 		</section>
-		
+
 	<footer>
 		<div class="foot-left footer">
 			<span>|</span>
@@ -322,6 +323,6 @@
 
 	<script type="text/javascript" src="assets/js/app.js"></script>
 	<script src="assets/js/main.js"></script>
-	
+
 </body>
 </html>
